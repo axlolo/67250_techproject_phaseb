@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Axel Edin">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+        <nav class="nav_bar" id="navbar">
+            <a class="firstLink" href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <main class="main">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="quantity">Ticket Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
