@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="./static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Axel Edin">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+        <header class="header">
+            <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+        <nav class="nav_bar" id="navbar">
+            <a class="firstLink" href="index.html">Home</a>
+            <a href="./views/explore.html">Explore</a>
+            <a href="./views/exhibitions.html">Exhibitions</a>
+            <a href="./views/members.html">Members</a>
+            <a href="./views/buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <main class="main">
+            <h1 id="greeting">Welcome to the MonoMuse Museum</h1>
+            <p id="shortIntro">
+                MonoMuse explores the crossroads of art, technology, and creativity through immersive exhibitions and interactive experiences. Discover how innovation shapes culture and be inspired on your visit.
+            </p>
+            <p id="longIntro">
+                MonoMuse is a contemporary museum aimed at exploring the intersection of art, technology, and human creativity. MonoMuse does this through immersive exhibitions, interactive installations, and rotating collections. MonoMuse welcomes visitors to explore how digital innovation is transforming the way humans create and experience art. Whether you are a first-time visitor or an art connoisseur, our exhibitions offer opportunities for new perspectives on the role of technology in culture and everyday human life. Plan your visit to experience our exhibitions and events designed to inspire curiosity and creativity.
+            </p>
+            <button id="readMore">Read More</button>
+            <button id="readLess">Read Less</button>
+            <a href="views/buytickets.html">Buy Tickets</a>
+            <br><br>
+            <p>Come visit us at: 4400 Forbes Ave, Pittsburgh, PA 15213</p>
+            <br><br>
+            <p>We are open from 9:00 am to 5:00pm, Monday through Friday.</p>
+            <p>Phone number: 123-456-7890</p>
+            <p>Email: info@monomusemuseum.com</p>
+
+            <!-- Map comes from Leaflet: https://leafletjs.com/examples/quick-start/ -->
+            <div id="map"></div>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+<!--
+  Image attributions:
+  - monomuselogo.png: Created by Axel Edin with Gemini Image Generator
+  - museum_image.webp: https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg
+  - digitalinnovation.webp: https://knowledge.wharton.upenn.edu/wp-content/uploads/2024/05/5.15.24-stefano-puntoni-book-excerpt-GettyImages-1244482898.jpg
+  - humanandmachine.jpeg: https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-robotic-hand-human-hand-SHS-510170158.5120.jpg
+  - people.jpg: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZV72rK3-QZvrPHuEuNzrrtBj8M0uPt50u3CTWIpoFJJq9RyaW
+  - ex1.jpeg: https://statemuseumpa.org/wp-content/uploads/2023/08/Icons-scaled.jpg
+  - ex2.jpeg: https://www.phillyseaport.org/wp-content/uploads/2021/09/IMG_6731-1024x683.jpg
+  - ex3.jpeg: https://www-s3-live.kent.edu/s3fs-root/s3fs-public/page/Timeline%20Gallery%20View%20002.jpg?VersionId=X50QkUioub1YGhod7evMPxvmVasofUHm
+-->

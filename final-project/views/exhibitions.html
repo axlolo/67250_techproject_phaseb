@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../static/script.js" defer></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Axel Edin">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse Exhibitions</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+        <nav class="nav_bar" id="navbar">
+            <a class="firstLink" href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="members.html">Members</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <main class="main">
+            <h1>Exhibitions</h1>
+            <h3><strong>Digital Frontiers</strong></h3>
+            <div class="exhibition-row">
+                <p>
+                    An exploration of how digital technology has reshaped contemporary art, featuring works by emerging and established artists working at the intersection of code and creativity.
+                </p>
+                <img src="../static/digitalinnovation.webp" alt="Digital Frontiers exhibition">
+            </div>
+
+            <h3><strong>Human &amp; Machine</strong></h3>
+            <div class="exhibition-row">
+                <p>
+                    An interactive exhibition examining the evolving relationship between humans and artificial intelligence through immersive installations and thought-provoking artworks.
+                </p>
+                <img src="../static/humanandmachine.jpeg" alt="Human and Machine exhibition">
+            </div>
+
+            <div style="text-align: center;">
+                <button onclick="window.location.href='buytickets.html'">Buy Tickets</button>
+            </div>
+
+            <h3>Past Exhibitions</h3>
+        <!-- The slideshow container before comes from a W3Schools example: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../static/ex1.jpeg" style="width:100%">
+                <div class="text">Clothes through the ages</div>
+                </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../static/ex2.jpeg" style="width:100%">
+                <div class="text">Technology and society</div>
+                </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../static/ex3.jpeg" style="width:100%">
+                <div class="text">Art and technology</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+<!--
+  Image attributions:
+  - monomuselogo.png: Created by Axel Edin with Gemini Image Generator
+  - museum_image.webp: https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg
+  - digitalinnovation.webp: https://knowledge.wharton.upenn.edu/wp-content/uploads/2024/05/5.15.24-stefano-puntoni-book-excerpt-GettyImages-1244482898.jpg
+  - humanandmachine.jpeg: https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-robotic-hand-human-hand-SHS-510170158.5120.jpg
+  - people.jpg: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZV72rK3-QZvrPHuEuNzrrtBj8M0uPt50u3CTWIpoFJJq9RyaW
+  - ex1.jpeg: https://statemuseumpa.org/wp-content/uploads/2023/08/Icons-scaled.jpg
+  - ex2.jpeg: https://www.phillyseaport.org/wp-content/uploads/2021/09/IMG_6731-1024x683.jpg
+  - ex3.jpeg: https://www-s3-live.kent.edu/s3fs-root/s3fs-public/page/Timeline%20Gallery%20View%20002.jpg?VersionId=X50QkUioub1YGhod7evMPxvmVasofUHm
+-->
